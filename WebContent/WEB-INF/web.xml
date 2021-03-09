@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LibraryManagement</display-name>
+  <welcome-file-list>
+   <welcome-file>loginPage.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>project</param-name>
+    <param-value>lms</param-value>
+</context-param>
+ <display-name>ManagementController</display-name>
+<servlet>
+    <servlet-name>ManagementController</servlet-name>
+    <servlet-class>com.system.management.ManagementController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ManagementController</servlet-name>
+    <url-pattern>/search</url-pattern>
+     <url-pattern>/borrow</url-pattern>
+      <url-pattern>/return</url-pattern>
+       <url-pattern>/reserve</url-pattern>
+       <url-pattern>/login</url-pattern>
+       <url-pattern>/updateReturn</url-pattern>
+       <url-pattern>/order</url-pattern>
+         <url-pattern>/confirmReserve</url-pattern>
+        <url-pattern>/updateReserve</url-pattern>
+        <url-pattern>/multipleReserve</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>EntryController</servlet-name>
+    <servlet-class>com.system.management.EntryController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EntryController</servlet-name>
+    <url-pattern>/entry</url-pattern>
+    </servlet-mapping>
+    
+  
+   
+  
+</web-app>
